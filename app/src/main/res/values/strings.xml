@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">RegistrationServiceApp</string>
+    <string name="btn_registration">REGISTRATION</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_logout">Logout</string>
+    <string name="btn_check_registration">Check Registration</string>
+    <string name="view_txt_status">WRITE YOUR STATUS</string>
+    <string name="view_txt_status2">and let it work for you!</string>
+    <string name="email_edit_text">Enter Email</string>
+    <string name="password_edit_text">Enter Password</string>
+    <string name="confirm_password_edit_text">Confirm Password</string>
+    <string name="chbStack">Move To Back Stack</string>
+
+</resources>
