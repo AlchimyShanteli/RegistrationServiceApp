@@ -1,4 +1,4 @@
-package fragments;
+package com.example.erza.registrationserviceapp.fragments.profilefragment;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -13,10 +13,10 @@ import com.example.erza.registrationserviceapp.R;
  * Created by erza on 11/2/17.
  */
 
-public class LoginFragment extends Fragment {
+public class ProfileFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_login, container, false);
+        return inflater.inflate(R.layout.fragment_profile, container, false);
     }
 }
