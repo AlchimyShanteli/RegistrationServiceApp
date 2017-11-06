@@ -98,7 +98,7 @@
             android:layout_marginLeft="28dp"
             android:layout_marginStart="28dp"
             android:background="@color/colorAccent"
-            android:onClick="onClickam "
+            android:onClick="onClick"
             android:text="@string/btn_register" />
 
 
