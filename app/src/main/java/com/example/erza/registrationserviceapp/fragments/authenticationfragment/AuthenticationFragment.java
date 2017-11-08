@@ -12,7 +12,6 @@ import com.example.erza.registrationserviceapp.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 
 /**

@@ -1,19 +1,39 @@
 <resources>
     <string name="app_name">RegistrationServiceApp</string>
+
     <string name="btn_registration">REGISTRATION</string>
     <string name="btn_register">Register</string>
     <string name="btn_login">Login</string>
     <string name="btn_logout">Logout</string>
     <string name="btn_update">Update Profile</string>
     <string name="btn_check_registration">Check Registration</string>
+
+
     <string name="view_txt_status">WRITE YOUR STATUS</string>
     <string name="view_txt_status2">and let it work for you!</string>
     <string name="email_edit_text">Enter Email</string>
     <string name="password_edit_text">Enter Password</string>
     <string name="confirm_password_edit_text">Confirm Password</string>
+
     <string name="chbStack">Move To Back Stack</string>
+
     <string name="input_age">Age</string>
     <string name="input_name">Name</string>
     <string name="input_surname">Surname</string>
+
+    <string name="navigation_mail">sanda.sanda@sanda.com</string>
+    <string name="navigation_txt">Register App</string>
+
+    <string name="menu_item_main">Settings</string>
+    <string name="menu_item_list_service">List Service</string>
+    <string name="menu_item_home">Home</string>
+    <string name="menu_item_hotel">Hotels</string>
+    <string name="menu_item_hospitals">Hospitals</string>
+    <string name="menu_item_restaurant">Restaurants</string>
+    <string name="menu_item_personality">Personality</string>
+    <string name="menu_item_service">Service</string>
+    <string name="menu_item_account">Account</string>
+    <string name="menu_item_setting">Settings</string>
+
 
 </resources>
