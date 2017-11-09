@@ -26,9 +26,9 @@ import com.example.erza.registrationserviceapp.R;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    FloatingActionButton floatingActionButton;
-    DrawerLayout drawer;
-    NavigationView navigationView;
+    private FloatingActionButton floatingActionButton;
+    private DrawerLayout drawer;
+    private NavigationView navigationView;
 
 
     @Override
@@ -37,9 +37,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_main);
 
 
-        findViewById(R.id.floatingActionBar);
-        findViewById(R.id.drawer_layout);
-        findViewById(R.id.navigationView);
+        floatingActionButton = findViewById(R.id.floatingActionBar);
+        drawer = findViewById(R.id.drawer_layout);
+        navigationView = findViewById(R.id.navigationView);
 
 
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             }
         });
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         ActionBarDrawerToggle toogle = new ActionBarDrawerToggle(this, drawer, R.string.navigation_drawer_open, R.string.navigation_drawer_closed);
         drawer.addDrawerListener(toogle);

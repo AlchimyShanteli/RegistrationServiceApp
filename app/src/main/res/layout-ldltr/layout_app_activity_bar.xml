@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.main.MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/layout_content_main" />
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_content_main" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/floatingActionBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_email"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="328dp"
-        tools:layout_editor_absoluteY="455dp" />
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 </android.support.constraint.ConstraintLayout>

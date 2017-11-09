@@ -17,22 +17,22 @@
         <menu>
             <item
                 android:id="@+id/navigationHome"
-                android:icon="@drawable/ic_home_variant"
+
                 android:title="@string/menu_item_home" />
 
             <item
                 android:id="@+id/navigationHotel"
-                android:icon="@drawable/ic_hotel"
+
                 android:title="@string/menu_item_hotel" />
 
             <item
                 android:id="@+id/navigationHospital"
-                android:icon="@drawable/ic_hospital_building"
+
                 android:title="@string/menu_item_hospitals" />
 
             <item
                 android:id="@+id/navigationRestaurant"
-                android:icon="@drawable/ic_food_fork_drink"
+
                 android:title="@string/menu_item_restaurant" />
 
         </menu>
@@ -44,13 +44,13 @@
 
             <item
                 android:id="@+id/navigationAccount"
-                android:icon="@drawable/ic_account_box"
+
                 android:title="@string/menu_item_account" />
 
             <item
                 android:id="@+id/navigationSettings"
                 android:title="@string/menu_item_setting"
-                android:icon="@drawable/ic_settings"/>
+               />
 
         </menu>
 
