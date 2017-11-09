@@ -35,5 +35,8 @@
     <string name="menu_item_account">Account</string>
     <string name="menu_item_setting">Settings</string>
 
+    <string name="navigation_drawer_open">Navigation Drawer Open</string>
+    <string name="navigation_drawer_closed">Navigation Drawer Closed</string>
+
 
 </resources>
