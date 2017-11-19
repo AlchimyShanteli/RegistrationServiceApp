@@ -1,8 +1,6 @@
 package com.example.erza.registrationserviceapp.fragments.profilefragment;
 
-import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -14,9 +12,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toolbar;
 
 import com.example.erza.registrationserviceapp.R;
+
+import api.Grpc;
 
 
 /**
@@ -60,6 +59,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         navigationView.setNavigationItemSelectedListener(this);
 
+        new Grpc(this);
     }
 
     @Override
