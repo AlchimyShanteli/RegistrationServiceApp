@@ -1,8 +1,6 @@
-package com.example.erza.registrationserviceapp.fragments.profilefragment;
+package com.example.erza.registrationserviceapp.fragments.main;
 
-import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -11,12 +9,17 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toolbar;
 
 import com.example.erza.registrationserviceapp.R;
+import com.example.erza.registrationserviceapp.fragments.HotelService.HotelService;
+import com.example.erza.registrationserviceapp.fragments.helpers.DbSHelper;
+import com.example.erza.registrationserviceapp.fragments.repository.DbSRepository;
+
+import java.util.ArrayList;
 
 
 /**
@@ -29,17 +32,33 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private FloatingActionButton floatingActionButton;
     private DrawerLayout drawer;
     private NavigationView navigationView;
+    private DbSHelper dbSHelper;
+    private DbSRepository dbSRepository;
 
+    private static ArrayList<Integer> list;
+    private static ArrayList<HotelService> service;
+    private static RecyclerView recyclerView;
+    private static RecyclerView.Adapter adapter;
+    private RecyclerView.LayoutManager layoutManager;
+    static View.OnClickListener onClickListener;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        //declare findViewById
+        recyclerView = findViewById(R.id.recyclerViewMain);
         floatingActionButton = findViewById(R.id.floatingActionBar);
         drawer = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.navigationView);
+
+        onClickListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        };
 
 
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
@@ -47,8 +66,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             public void onClick(View view) {
                 Snackbar.make(view, "Select your action", Snackbar.LENGTH_LONG)
                         .setAction("action", null).show();
-
-
             }
         });
 
