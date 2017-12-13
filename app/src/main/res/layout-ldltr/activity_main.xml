@@ -10,8 +10,9 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
-    <include
-        layout="@layout/layout_app_activity_bar" />
+    <include layout="@layout/layout_app_activity_bar" />
+    <include layout="@layout/card_view_layout" />
+
 
     <android.support.design.widget.NavigationView
         android:id="@+id/navigationView"
@@ -23,34 +24,71 @@
         app:menu="@menu/main_drawer" />
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerViewMain"
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <android.support.v7.widget.CardView
-            android:id="@+id/cardView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:cardBackgroundColor="@color/colorPrimary"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="5dp">
-
-            <LinearLayout
-                android:id="@+id/linearLayoutDescription"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/txtDescription"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-            </LinearLayout>
-
-        </android.support.v7.widget.CardView>
-
     </android.support.v7.widget.RecyclerView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/fab_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            app:fab_colorNormal="#512D00"
+            app:fab_colorPressed="#512D00"
+            app:fab_colorRipple="#99FFFFFF"
+            app:fab_shadowColor="#66000000"
+            app:fab_showShadow="true"
+            app:menu_backgroundColor="#ccffffff"
+            app:menu_fab_label="Choose an action"
+            app:menu_labels_colorNormal="#333333"
+            app:menu_labels_colorPressed="#444444"
+            app:menu_labels_colorRipple="#66FFFFFF"
+            app:menu_labels_ellipsize="end"
+            app:menu_labels_maxLines="-1"
+            app:menu_labels_position="left"
+            app:menu_labels_showShadow="true"
+            app:menu_labels_singleLine="true"
+            app:menu_openDirection="up">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabReservation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/check_calendar"
+                app:fab_label="Make Reservation"
+                app:fab_size="normal" />
+
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/contact"
+                app:fab_label="Contact"
+                app:fab_size="normal" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabMaps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/maps_marker"
+                app:fab_label="Show in a Map"
+                app:fab_size="normal" />
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+
+    </RelativeLayout>
 
 
 </android.support.v4.widget.DrawerLayout>

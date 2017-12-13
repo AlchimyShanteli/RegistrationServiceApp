@@ -38,5 +38,13 @@
     <string name="navigation_drawer_open">Navigation Drawer Open</string>
     <string name="navigation_drawer_closed">Navigation Drawer Closed</string>
 
+    <string name="drawer_make_reservation">Make Reservation</string>
+    <string name="drawer_hotel_service">Hotel Service</string>
+    <string name="drawer_restaurant">Restaurant</string>
+    <string name="drawer_contacts">Contacts</string>
+    <string name="drawer_language">Language</string>
+    <string name="drawer_maps">Show in a Map</string>
+    <string name="card_title">Card Title</string>
+
 
 </resources>

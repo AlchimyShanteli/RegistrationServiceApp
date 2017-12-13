@@ -1,4 +1,4 @@
-package com.example.erza.registrationserviceapp.fragments.adapters;
+package com.example.erza.registrationserviceapp.adapters;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

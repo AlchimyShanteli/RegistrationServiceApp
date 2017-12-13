@@ -1,4 +1,4 @@
-package com.example.erza.registrationserviceapp.fragments.repository;
+package com.example.erza.registrationserviceapp.repository;
 
 import android.content.Context;
 

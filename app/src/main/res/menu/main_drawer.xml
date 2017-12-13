@@ -3,43 +3,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="Navigation_view">
 
-    <group>
-
-        <item
-            android:id="@+id/navigationListService"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_item_list_service" />
-    </group>
 
 
-    <item android:title="@string/menu_item_service">
+
+    <item
+        android:id="@+id/navigationHome"
+        android:title="@string/menu_item_home">
 
         <menu>
             <item
-                android:id="@+id/navigationHome"
+                android:id="@+id/navigationReservation"
 
-                android:title="@string/menu_item_home" />
-
-            <item
-                android:id="@+id/navigationHotel"
-
-                android:title="@string/menu_item_hotel" />
+                android:title="@string/drawer_make_reservation" />
 
             <item
-                android:id="@+id/navigationHospital"
+                android:id="@+id/navigationService"
 
-                android:title="@string/menu_item_hospitals" />
+                android:title="@string/drawer_hotel_service" />
 
             <item
                 android:id="@+id/navigationRestaurant"
 
-                android:title="@string/menu_item_restaurant" />
+                android:title="@string/drawer_restaurant" />
+
+            <item
+                android:id="@+id/navigationContacts"
+
+                android:title="@string/drawer_contacts" />
 
         </menu>
 
     </item>
 
-    <item android:title="@string/menu_item_personality">
+    <item
+        android:id="@+id/navigationSettings"
+        android:title="@string/menu_item_setting">
         <menu>
 
             <item
@@ -48,8 +46,8 @@
                 android:title="@string/menu_item_account" />
 
             <item
-                android:id="@+id/navigationSettings"
-                android:title="@string/menu_item_setting"
+                android:id="@+id/navigationLanguage"
+                android:title="@string/drawer_language"
                />
 
         </menu>
